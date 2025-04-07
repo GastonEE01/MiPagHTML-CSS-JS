@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(165, 116, 42);
+}
+
+body h1{
+    text-align: center;
+
+}
+
+.menu  button{
+    border: 3px solid grey ;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: black;
+    color: red;
+    width: 90%; /* Ajusta el ancho de los botones */
+    padding: 10px;
+}
+
+.menu button:hover{
+    background-color: red;
+    color: black;
+}
+
+.menu {
+    background-color: blue;
+    width: 250px;
+    height: 85vh; /* Reduce la altura total para dejar espacio arriba y abajo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Distribuye los botones uniformemente */
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 50%; /* Lo mueve hacia abajo */
+    transform: translateY(-50%); /* Centra el menú verticalmente */
+    border-radius: 15px; /* Opcional: redondea los bordes */
+    padding: 10px 0; /* Espacio interno arriba y abajo */
+}
+
+
+.informacion{
+    background-color: red;
+    margin-left: 250px;
+}
+
+
+.seccion {
+    display: block;
+    padding: 20px;
+}
+
+.oculto {
+    display: none; /* Oculta las secciones */
+}
+
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Alinea al inicio */
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    width: 300px;
+    height: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+

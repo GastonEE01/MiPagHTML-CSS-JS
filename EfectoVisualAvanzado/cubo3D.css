@@ -1,0 +1,97 @@
+.cubo{
+    background-color: brown;
+    margin-left: 45%;
+    margin-top: 15%;
+    width: 300px;
+    height: 300px;
+    transform: rotateX('-200px') rotateY('100px') rotateZ('15%');
+    animation: cubo 10s infinite ease-in-out;
+}
+
+/* mio
+.padre{
+    perspective: 0cqb;
+}
+
+@keyframes cubo{
+    0%{
+        transform: rotateX('-200px') rotateY('-100px') rotateZ('-300px');
+    }
+    50%{
+        transform: rotateX('200px') rotateY('100px') rotateZ('300xp');
+
+
+    }
+    100%{
+        transform: rotateX('20%') rotateY('50%') rotateZ('75%');
+
+
+    }
+}*/
+
+/*CHAT GPT*/
+
+/* Contenedor con perspectiva */
+.padre {
+    perspective: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos del cubo */
+.cubo {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: cubo 5s infinite linear;
+}
+
+/* Estilos de las caras */
+.cara {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 0, 0, 0.7);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Posición de cada cara */
+.frente  { transform: rotateY(  0deg) translateZ(75px); background: red; }
+.atras   { transform: rotateY(180deg) translateZ(75px); background: blue; }
+.derecha { transform: rotateY( 90deg) translateZ(75px); background: green; }
+.izquierda { transform: rotateY(-90deg) translateZ(75px); background: yellow; }
+.arriba  { transform: rotateX( 90deg) translateZ(75px); background: purple; }
+.abajo   { transform: rotateX(-90deg) translateZ(75px); background: orange; }
+
+/* Animación de rotación */
+@keyframes cubo {
+    0%   { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+
+/* Cambia la dirección al hacer hover */
+.cubo:hover {
+    animation: cuboReverse 5s infinite linear;
+    animation-play-state: paused;
+}
+
+/* Animación normal (gira en sentido horario) */
+@keyframes cubo {
+    0%   { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+/* Animación inversa (gira en sentido antihorario) */
+@keyframes cuboReverse {
+    0%   { transform: rotateX(360deg) rotateY(360deg); }
+    100% { transform: rotateX(0deg) rotateY(0deg); }
+}

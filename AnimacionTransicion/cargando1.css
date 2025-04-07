@@ -1,0 +1,43 @@
+
+.loader{
+    width: 300px;
+    height: 300px;
+    margin-left: 50%;
+    margin-top: 15%;
+    border-radius: 50%;
+    background-color: black;
+    animation: loader 5s infinite ease-in-out alternate;
+
+    /*
+    alternate hace que la animación vaya y vuelva, en lugar de resetearse de golpe.
+     ease-in-out hace que el cambio sea más progresivo y no tan brusco.
+     */
+}
+
+
+@keyframes loader {
+    0%{
+        background-color: black;
+        transform: scale(1) rotate(0deg);
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+
+    }
+    25%{
+        background-color: rgb(247, 0, 0);
+        transform: scale(1.5) rotate(90deg) translateY(-20px);;
+        box-shadow: 0px 0px 20px rgba(247, 0, 0, 0.7);
+
+    }
+    50%{
+        background-color: rgb(54, 0, 248);
+        transform: scale(1.6) rotate(180deg);
+
+    }
+    100%{
+        background-color: rgb(235, 201, 8);
+        transform: scale(1.7) rotate(360deg) ;
+
+
+    }
+
+}

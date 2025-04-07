@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.barraDeCarga {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%; /* Inicialmente sin ancho */
+    height: 5px;
+    background-color: green;
+    transition: width 0.2s ease-in-out;
+}
+
+.contenido {
+    padding: 20px;
+    font-size: 18px;
+    height: 2000px; /* Aumenta la altura para forzar el scroll */
+}

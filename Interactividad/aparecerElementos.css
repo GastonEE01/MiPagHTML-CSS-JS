@@ -1,0 +1,89 @@
+.contenedor {
+    opacity: 0;
+    background-color: blue;
+    margin-left: 50%;
+    margin-top: 100px;
+    width: 300px;
+    height: 350px;
+    transition: background-color 0.5s ease; /* Para que el color cambie suavemente */
+    animation: cont 4s ease-in-out infinite;
+}
+
+.contenedor2 {
+    opacity: 0;
+    background-color: blue;
+    margin-left: 50%;
+    margin-top: 100px;
+    width: 300px;
+    height: 350px;
+    transition: background-color 0.5s ease; /* Para que el color cambie suavemente */
+    animation: cont2 4s ease-in-out infinite;
+}
+
+.contenedor3 {
+    opacity: 0;
+    background-color: blue;
+    margin-left: 50%;
+    margin-top: 100px;
+    width: 300px;
+    height: 350px;
+    transition: background-color 0.5s ease; /* Para que el color cambie suavemente */
+    animation: cont3 4s ease-in-out infinite;
+}
+
+@keyframes cont {
+    0% {
+    }
+   50%{
+    transform: translateX(100px);
+
+   }   
+}
+
+@keyframes cont2 {
+    0% {
+    }
+   50%{
+    transform: translateX(-100px);
+
+   }
+
+   
+}
+
+@keyframes cont3 {
+    0% {
+    }
+   50%{
+    transform: translateY(100px);
+
+   }
+
+   
+}
+
+/*
+Para evitar repetir codigo
+.contenedor {
+    opacity: 0;
+    background-color: blue;
+    margin-left: 50%;
+    margin-top: 100px;
+    width: 300px;
+    height: 350px;
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.animar1 {
+    animation: cont 4s ease-in-out infinite;
+}
+
+.animar2 {
+    animation: cont2 4s ease-in-out infinite;
+}
+
+.animar3 {
+    animation: cont3 4s ease-in-out infinite;
+}
+*/
+
