@@ -1,65 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./inicio.css">
-   <link rel="stylesheet" href="./AnimacionTransicion/botonAnimado1.css">
-   
-    <title>Mis ejercicios de HTML,CSS y JS</title>
-</head>
-<body>
-    <h1>Ejercicios con resolucion de HTML,CSS y JS  :)</h1>
-        <section class="menu">
-            <button onclick="mostrarSeccion('inicio')">INICIO</button>
-            <button onclick="mostrarSeccion('animaciones')">ANIMACIONES Y TRANSICIONES</button>
-            <button onclick="mostrarSeccion('interactividad')">INTERACTIVIDAD</button>
-            <button onclick="mostrarSeccion('efectos')">EFECTOS VISUALES AVANZADOS</button>
-            <button onclick="mostrarSeccion('dom')">MANIPULACION DEL DOM</button>
-            <button onclick="mostrarSeccion('canvas')">CANVAS Y GRAFICOS</button>
-            <button onclick="mostrarSeccion('fetch')">FETCH Y APIs</button>
-            <button onclick="mostrarSeccion('audio')">AUDIO Y VIDEO</button>
-        </section>
-    <section class="informacion">
 
-    <!-- SECCIONES -->
-    <section id="inicio" class="seccion">
-        <h3>Bienvenido a la página de ejercicios.</h3>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Mis ejercicios de HTML, CSS y JS</title>
+      <link rel="stylesheet" href="./inicio.css" />
+    </head>
+    <body>
+      <h1>Ejercicios con resolución de HTML, CSS y JS :)</h1>
+    
+      <section class="menu">
+        <button onclick="mostrarSeccion('inicio')">INICIO</button>
+        <button onclick="mostrarSeccion('animaciones')">ANIMACIONES Y TRANSICIONES</button>
+        <button onclick="mostrarSeccion('interactividad')">INTERACTIVIDAD</button>
+        <button onclick="mostrarSeccion('efectos')">EFECTOS VISUALES AVANZADOS</button>
+        <button onclick="mostrarSeccion('dom')">MANIPULACION DEL DOM</button>
+        <button onclick="mostrarSeccion('canvas')">CANVAS Y GRAFICOS</button>
+        <button onclick="mostrarSeccion('fetch')">FETCH Y APIs</button>
+        <button onclick="mostrarSeccion('audio')">AUDIO Y VIDEO</button>
+    </section>
+    
+      <section class="informacion">
         
-    </section>
+        <!-- INICIO -->
+        <section id="inicio" class="seccion">
+          <h3>Bienvenido a la página de ejercicios.</h3>
+        </section>
+    
+        <!-- ANIMACIONES -->
+        <section id="animaciones" class="seccion oculto">
+          <h3>Ejercicios de animaciones y transiciones</h3>
+          <div class="contenedorTarjeta">
+            <div class="tarjeta">
+              <h4>1) Botón animado</h4>
+              <iframe src="./AnimacionTransicion/botonAnimado1.html" width="100%" height="300" style="border: 1px solid black;"></iframe>
+            </div>
+    
+            <div class="tarjeta">
+              <h4>2) Botón animado 2</h4>
+              <iframe src="./AnimacionTransicion/botonAnimado2.html" width="100%" height="300" style="border: 1px solid black;"></iframe>
+            </div>
+    
+            <div class="tarjeta">
+              <h4>3) Botón con rebote</h4>
+              <iframe src="./AnimacionTransicion/botonConRebote.html" width="100%" height="300" style="border: 1px solid black;"></iframe>
+            </div>
+    
+            <div class="tarjeta">
+              <h4>4) Cargando</h4>
+              <iframe src="./AnimacionTransicion/cargando1.html" width="100%" height="300" style="border: 1px solid black; " ></iframe>
+            </div>
+    
+            <div class="tarjeta">
+              <h4>5) Círculo pulsante</h4>
+              <iframe src="./AnimacionTransicion/circuloPulsante.html" width="100%" height="300" style="border: 1px solid black;"></iframe>
+            </div>
+          </div>
+        </section>
+    
+  
+        <section id="interactividad" class="seccion oculto">
+          <h3>Ejercicios de interactividad</h3>
+          <div class="contenedorTarjeta">
+            <div class="tarjeta">
+              <h4>1) Aparecer elementos</h4>
+              <iframe src="./Interactividad/aparecerElementos.html" width="100%" height="300" style="border: 1px solid black;"></iframe>
+            </div>
 
-    <section id="animaciones" class="seccion oculto">
-        <h3>Ejercicios de animaciones y transiciones</h3>
+            <div class="tarjeta">
+              <h4>2) Barra de carga</h4>
+              <iframe src="./Interactividad/barraDeCarga.html" width="100%" height="300" style="border: 1px solid black;"></iframe>
+            </div>
 
-        <h4>1)Boton animado</h4>
+            <div class="tarjeta">
+              <h4>3) Scroll 1</h4>
+              <iframe src="./Interactividad/ejemploScroll.html" width="100%" height="300" style="border: 1px solid black;"></iframe>
+            </div>
+
+            <div class="tarjeta">
+              <h4>4) Scroll 2</h4>
+              <iframe src="./Interactividad/ejemploScroll2.html" width="100%" height="300" style="border: 1px solid black;"></iframe>
+            </div>
+          </div>
+        </section>
+
+    <section id="EfectoVisualAvanzado" class="seccion oculto">
+      <h3>Ejercicios de efectos visuales avanzados</h3>
+
+        <div class="contenedorTarjeta">
+          <h4>1)Aparecer elementos </h4>
+
         <div class="tarjeta">
-            <iframe src="./AnimacionTransicion/botonAnimado1.html" width="100%" height="400" style="border: 1px solid black;"></iframe>
-        </div>
+          <h4>1)Aparecer elementos </h4>
 
-        <h4>2)Boton animado 2</h4>
-        <div class="tarjeta">
-            <iframe src="./AnimacionTransicion/botonAnimado2.html" width="100%" height="400" style="border: 1px solid black;"></iframe>
-        </div>
-
-        <h4>3)Boton con rebote</h4>
-        <div class="tarjeta">
-            <iframe src="./AnimacionTransicion/botonConRebote.html" width="100%" height="400" style="border: 1px solid black;"></iframe>
-        </div>
-
-        <h4>4)Cargando</h4>
-        <div class="tarjeta">
-            <iframe src="./AnimacionTransicion/cargando1.html" width="100%" height="400" style="border: 1px solid black;"></iframe>
-        </div>
-
-        <h4>5)Circulo pulsante</h4>
-        <div class="tarjeta">
-            <iframe src="./AnimacionTransicion/circuloPulsante.html" width="100%" height="400" style="border: 1px solid black;"></iframe>
-        </div>
-    </section>
-
-    <section id="interactividad" class="seccion oculto">
-        <h4>1)Aparecer elementos </h4>
-        <div class="tarjeta">
             <iframe src="./Interactividad/aparecerElementos.html" width="100%" height="400" style="border: 1px solid black;"></iframe>
         </div>
         
@@ -77,27 +111,34 @@
         <div class="tarjeta">
             <iframe src="./Interactividad/ejemploScroll2.html" width="100%" height="400" style="border: 1px solid black;"></iframe>
         </div>
+    </div>
     </section>
 
-    <section id="efectos" class="seccion oculto">
-        <h4>1)Tarjeta presentacion 3D</h4>
-        <div class="tarjeta">
-            <iframe src="./EfectoVisualAvanzado/cartaPresentacion3D.html" width="100%" height="400" style="border: 1px solid black;"></iframe>
-        </div>   
+<section id="efectos" class="seccion oculto">
+  <h3>Ejercicios de efectos visual avanzado</h3>
+    <div class="contenedorTarjeta">
+    <div class="tarjeta">
+      <h4>1)Carta presentacion 3D elementos </h4>
+      <iframe src="./EfectoVisualAvanzado/cartaPresentacion3D.html" width="100%" height="400" style="border: 1px solid black;"></iframe>
+    </div>
+    
+    <div class="tarjeta">
+      <h4>2)Cubo 3D</h4>
+      <iframe src="./EfectoVisualAvanzado/cubo3D.html" width="100%" height="400" style="border: 1px solid black;"></iframe>
+    </div>
 
-        <h4>2)Cubo 3D 2</h4>
-        <div class="tarjeta">
-            <iframe src="./EfectoVisualAvanzado/cubo3D.html" width="100%" height="400" style="border: 1px solid black;"></iframe>
-        </div> 
-
-        <h4>3)Tarjeta 3D</h4>
-        <div class="tarjeta">
-            <iframe src="./EfectoVisualAvanzado/tarjeta3d.html" width="100%" height="400" style="border: 1px solid black;"></iframe>
-        </div>
-     </section>
+    <div class="tarjeta">
+      <h4>3)Tarjeta 3D</h4>
+      <iframe src="./EfectoVisualAvanzado/tarjeta3d.html" width="100%" height="400" style="border: 1px solid black;"></iframe>
+    </div>
+</div>
+</section>
 
     <section id="dom" class="seccion oculto">
+        <div class="contenedorTarjeta">
+
         <h3>Ejercicios de manipulación del DOM</h3>
+        </div>
     </section>
 
     <section id="canvas" class="seccion oculto">
@@ -111,6 +152,8 @@
     <section id="audio" class="seccion oculto">
         <h3>Ejercicios de Audio y Video</h3>
     </section>
+
+
 </section>
 
     <script src="js.js"></script>
